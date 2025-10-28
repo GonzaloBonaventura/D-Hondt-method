@@ -4,7 +4,7 @@ A C# console application that simulates the D’Hondt method for proportional se
 
 ---
 
-## 📌 Features
+## Features
 
 - Interactive input for political parties and vote totals
 - Customizable number of seats
@@ -13,7 +13,7 @@ A C# console application that simulates the D’Hondt method for proportional se
 
 ---
 
-## ⚙️ How the D’Hondt Method Works
+## How the D’Hondt Method Works
 
 1. Each party starts with 0 seats.
 2. Their total votes are divided by (current seats + 1).
@@ -22,13 +22,3 @@ A C# console application that simulates the D’Hondt method for proportional se
 5. A list is shown with each seat awarded and running totals.
 
 This system is widely used for proportional representation in elections around the world.
-
----
-
-## ▶️ Running the Program
-
-Ensure you have the .NET SDK installed.
-
-### Using `dotnet`
-```bash
-dotnet run
