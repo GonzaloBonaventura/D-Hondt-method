@@ -1,0 +1,14 @@
+C:\Users\bonav\OneDrive\Documents\C#\elecciones\bin\Debug\net9.0\elecciones.exe
+C:\Users\bonav\OneDrive\Documents\C#\elecciones\bin\Debug\net9.0\elecciones.deps.json
+C:\Users\bonav\OneDrive\Documents\C#\elecciones\bin\Debug\net9.0\elecciones.runtimeconfig.json
+C:\Users\bonav\OneDrive\Documents\C#\elecciones\bin\Debug\net9.0\elecciones.dll
+C:\Users\bonav\OneDrive\Documents\C#\elecciones\bin\Debug\net9.0\elecciones.pdb
+C:\Users\bonav\OneDrive\Documents\C#\elecciones\obj\Debug\net9.0\elecciones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bonav\OneDrive\Documents\C#\elecciones\obj\Debug\net9.0\elecciones.AssemblyInfoInputs.cache
+C:\Users\bonav\OneDrive\Documents\C#\elecciones\obj\Debug\net9.0\elecciones.AssemblyInfo.cs
+C:\Users\bonav\OneDrive\Documents\C#\elecciones\obj\Debug\net9.0\elecciones.csproj.CoreCompileInputs.cache
+C:\Users\bonav\OneDrive\Documents\C#\elecciones\obj\Debug\net9.0\elecciones.dll
+C:\Users\bonav\OneDrive\Documents\C#\elecciones\obj\Debug\net9.0\refint\elecciones.dll
+C:\Users\bonav\OneDrive\Documents\C#\elecciones\obj\Debug\net9.0\elecciones.pdb
+C:\Users\bonav\OneDrive\Documents\C#\elecciones\obj\Debug\net9.0\elecciones.genruntimeconfig.cache
+C:\Users\bonav\OneDrive\Documents\C#\elecciones\obj\Debug\net9.0\ref\elecciones.dll
