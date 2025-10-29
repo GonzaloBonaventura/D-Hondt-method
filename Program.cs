@@ -2,22 +2,30 @@ using System;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Numerics;
+using System.Drawing;
 
 class Program
 {
     static List<string> names = new List<string> { };
     static List<int> votes = new List<int> { };
-    static List<string> result = new List<string> { };
-
-
     static void Main()
     {
-        bool keepadding = true;
+        bool run = true;
         System("Welcome, this is a simulator for the D'Hondt method to allocate seats in parliaments.");
         System("D'Hondt works by taking each party's total votes and dividing them by 1, 2, 3, and so on until you have at least as many results as seats.");
         System("All those results from every party are put together in one list, then sorted from the biggest to the smallest, and the top results win the seats.");
         System("Each time a party appears in that top group, it gets one seat. That is the whole method: divide votes, mix the results, sort them, and the highest numbers decide who gets the seats");
-
+        while (run)
+        {
+            Run();
+            run = Line("Do you want to run the program again?", true);
+            names =  new List<string> { };
+            votes = new List<int> { };
+        }
+    }
+    static void Run()
+    {
+        bool keepadding = true;
         Line();
         while (keepadding)
         {
@@ -26,13 +34,17 @@ class Program
             keepadding = Line("Do you want to add another party?", true);
         }
         Calculate();
+        Line();
     }
     static bool Line(string msg = "", bool question = false)
     {
         Console.WriteLine(msg);
         while (question)
         {
-            Console.WriteLine("yes | no");
+            WriteColor("yes ", ConsoleColor.Green);
+            Console.Write("| ");
+            WriteColor("no", ConsoleColor.Red);
+            Line();
             string ans = Read();
             switch (ans.ToLower())
             {
@@ -79,13 +91,12 @@ class Program
                 }
             }
             totalSeats[id]++;
-            result.Add(i + 1 + ". " + names[id] + " " + totalSeats[id] + ". " + votes[id] / totalSeats[id]);
-        }
-        foreach (var item in result)
-        {
-            Line(item);
+            WriteColor(i + 1 + ". ", ConsoleColor.DarkCyan);
+            WriteColor(names[id] + " <" + totalSeats[id] + "> ", ConsoleColor.Cyan);
+            Line(" " + votes[id] / totalSeats[id]);
         }
     }
+
     static void Error(string msg)
     {
         Console.ForegroundColor = ConsoleColor.Red;
@@ -98,11 +109,17 @@ class Program
         Console.WriteLine(msg);
         Console.ResetColor();
     }
+    static void WriteColor(string msg,ConsoleColor color)
+    {
+        Console.ForegroundColor = color;
+        Console.Write(msg);
+        Console.ResetColor();
+    }
     static string Read()
     {
         while (true)
         {
-            string input = Console.ReadLine();
+            string? input = Console.ReadLine();
             if (!String.IsNullOrEmpty(input))
             {
                 return input;
